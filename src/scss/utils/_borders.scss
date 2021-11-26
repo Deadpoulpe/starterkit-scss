@@ -1,0 +1,50 @@
+//Border________________________________________________________________________
+@each $key, $value in $borders-width {
+  @each $key2, $value2 in $borders-style {
+    .--border-#{$key}-#{$key2} {
+      border-width: $value;
+      border-style: $value2;
+    }
+
+    .--border-t-#{$key}-#{$key2} {
+      border-top-width: $value;
+      border-top-style: $value2;
+    }
+
+    .--border-r-#{$key}-#{$key2} {
+      border-right-width: $value;
+      border-right-style: $value2;
+    }
+
+    .--border-b-#{$key}-#{$key2} {
+      border-bottom-width: $value;
+      border-bottom-style: $value2;
+    }
+
+    .--border-l-#{$key}-#{$key2} {
+      border-left-width: $value;
+      border-left-style: $value2;
+    }
+
+    .--border-x-#{$key}-#{$key2} {
+      border-left-width: $value;
+      border-right-width: $value;
+      border-left-style: $value2;
+      border-right-style: $value2;
+    }
+
+    .--border-y-#{$key}-#{$key2} {
+      border-top-width: $value;
+      border-bottom-width: $value;
+      border-top-style: $value2;
+      border-bottom-style: $value2;
+    }
+  }
+}
+
+// Border radius
+@each $key, $value in $borders-radius {
+  .--border-radius-#{$key} {
+    border-radius: $value;
+  }
+}

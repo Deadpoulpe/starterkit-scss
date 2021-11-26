@@ -1,0 +1,22 @@
+<div class="_container --my-100 --ml-300 --relative --z-index-3">
+  <div class="_row --mb-70 --justify-content-space-evenly">
+    <div class="_col">
+      <h1 class="--center-txt">Color background</h1>
+    </div>
+  </div>
+
+  <div *ngFor="let element of elements" class="_row --mb-40 --justify-content-space-evenly">
+    <div class="_col2">
+      <div class="--{{element}} --p-20 --mx-auto --border-2-solid --border-radius-5 --bd-light-grey  --lg-txt">
+        <span class="--inline-block --border-1-solid --bd-black --bg-{{element}} --width-full">Lorem</span>
+      </div>
+    </div>
+    <div class="_col2">
+      <div (click)="copyService.copy('--bg-' + element)"
+        class="code --relative  --bg-light-black --yellow --p-20 --border-radius-10">
+        <span class="copy --bg-yellow --light-black --p-10 --m-10 --border-radius-5"><i class="fas fa-copy"></i></span>
+        <code class="--lg-txt">--bg-{{element}}</code>
+      </div>
+    </div>
+  </div>
+</div>

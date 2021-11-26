@@ -1,0 +1,34 @@
+// color__________________________________________________________________
+@each $color, $value in $colors {
+  .-#{$color} {
+    color: $value;
+  }
+}
+// background color______________________________________________
+@each $color, $value in $colors {
+  .--bg#{$color} {
+    background-color: $value;
+  }
+}
+
+// border color________________________________________________________
+@each $color, $value in $colors {
+  .--bd#{$color} {
+    border-color: $value;
+  }
+}
+
+//Image color_____________________________________________________________
+.--black-and-white {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+}
+
+.--color {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+}

@@ -1,0 +1,28 @@
+form {
+  width: 100%;
+}
+
+input,
+textarea,
+select,
+label {
+  width: 300px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.--form-field {
+}
+
+.--required {
+  position: relative;
+}
+
+.--required::before {
+  content: "*";
+  right: -10px;
+  top: -8px;
+  position: absolute;
+}

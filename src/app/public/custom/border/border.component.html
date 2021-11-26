@@ -1,0 +1,58 @@
+<div class="_container --mt-100 --mb-200 --ml-300 --relative --z-index-3">
+  <div class="_row --my-70 --justify-content-space-evenly">
+    <div class="_col">
+      <h1 class="--center-txt">Border</h1>
+    </div>
+  </div>
+  
+  <div *ngFor="let radiu of radius" class="_row --mb-40 --justify-content-space-evenly">
+    <div class="_col2">
+      <div class="--border-radius-{{radiu}} --p-20 --mx-auto --border-2-solid --bd-black --lg-txt">
+        <span>Lorem ipsum dolor sit amet</span>
+      </div>
+    </div>
+    <div class="_col2">
+      <div (click)="copyService.copy('--border-radius-' + radiu)"
+        class="code --relative  --bg-light-black --yellow --p-20 --border-radius-10">
+        <span class="copy --bg-yellow --light-black --p-10 --m-10 --border-radius-5"><i class="fas fa-copy"></i></span>
+        <code class="--lg-txt">--border-radius-{{radiu}}</code>
+      </div>
+    </div>
+  </div>
+
+  <div *ngFor="let color of colors" class="_row --mb-40 --justify-content-space-evenly">
+    <div class="_col2">
+      <div class="--bd-{{color}} --p-20 --mx-auto --border-2-solid --border-radius-5  --lg-txt">
+        <span>Lorem ipsum dolor sit amet</span>
+      </div>
+    </div>
+    <div class="_col2">
+      <div (click)="copyService.copy('--bd-' + color)"
+        class="code --relative  --bg-light-black --yellow --p-20 --border-radius-10">
+        <span class="copy --bg-yellow --light-black --p-10 --m-10 --border-radius-5"><i class="fas fa-copy"></i></span>
+        <code class="--lg-txt">--bd-{{color}}</code>
+      </div>
+    </div>
+  </div>
+
+  <div *ngFor="let direction of directions">
+    <div *ngFor="let style of styles">
+      <div *ngFor="let width of widths" class="_row --mb-40 --justify-content-space-evenly">
+        <div class="_col2">
+          <div
+            class="--pl-50 --p-20 --mx-auto --bd-black --bd-light-grey --lg-txt --{{direction.id}}-{{width}}-{{style}}">
+            <span>{{direction.name}} de {{width}} pixel de type {{style}}</span>
+          </div>
+        </div>
+        <div class="_col2">
+          <div (click)="copyService.copy('--' + direction.id + '-' + width + '-' + style)"
+            class="code --relative  --bg-light-black --yellow --p-20 --border-radius-10">
+            <span class="copy --bg-yellow --light-black --p-10 --m-10 --border-radius-5"><i
+                class="fas fa-copy"></i></span>
+            <code class="--lg-txt">--{{direction.id}}-{{width}}-{{style}}</code>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

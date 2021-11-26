@@ -1,0 +1,13 @@
+a {
+  text-decoration: none;
+  cursor: pointer;
+  color: #000000;
+  :hover {
+    cursor: pointer;
+    color: #60b664;
+  }
+  :focus {
+    cursor: pointer;
+    color: #60b664;
+  }
+}

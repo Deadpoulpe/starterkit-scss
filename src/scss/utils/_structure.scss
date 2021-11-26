@@ -1,0 +1,218 @@
+//Position______________________________________________________
+.--fixed {
+  position: fixed;
+}
+
+.--relative {
+  position: relative;
+}
+
+.--absolute {
+  position: absolute;
+}
+
+//Display______________________________________________________
+
+.--block {
+  display: block;
+}
+
+.--inline-block {
+  display: inline-block;
+}
+
+.--flex {
+  display: flex;
+}
+
+.--flex-direction-row {
+  flex-direction: row;
+}
+
+.--flex-direction-row-reverse {
+  flex-direction: row-reverse;
+}
+
+.--flex-direction-column {
+  flex-direction: column;
+}
+
+.--flex-direction-column-reverse {
+  flex-direction: column-reverse;
+}
+
+.--flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+.--flex-wrap {
+  flex-wrap: wrap;
+}
+
+.--flex-wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+.--justify-content-flex-start {
+  justify-content: flex-start;
+}
+
+.--justify-content-flex-end {
+  justify-content: flex-end;
+}
+
+.--justify-content-center {
+  justify-content: center;
+}
+
+.--justify-content-space-between {
+  justify-content: space-between;
+}
+
+.--justify-content-space-around {
+  justify-content: space-around;
+}
+
+.--justify-content-space-evenly {
+  justify-content: space-evenly;
+}
+
+.--justify-content-start {
+  justify-content: start;
+}
+
+.--justify-content-end {
+  justify-content: end;
+}
+
+.--justify-content-left {
+  justify-content: left;
+}
+
+.--justify-content-right {
+  justify-content: right;
+}
+
+.--align-content-flex-start {
+  align-content: flex-start;
+}
+
+.--align-content-flex-end {
+  align-content: flex-end;
+}
+
+.--align-content-center {
+  align-content: center;
+}
+
+.--align-content-space-between {
+  align-content: space-between;
+}
+
+.--align-content-space-around {
+  align-content: space-around;
+}
+
+.--align-content-space-evenly {
+  align-content: space-evenly;
+}
+
+.--align-content-stretch {
+  align-content: stretch;
+}
+
+.--align-content-start {
+  align-content: start;
+}
+
+.--align-content-end {
+  align-content: end;
+}
+
+.--align-content-baseline {
+  align-content: baseline;
+}
+
+.--align-items-stretch {
+  align-items: stretch;
+}
+
+.--align-items-flex-start {
+  align-items: flex-start;
+}
+
+.--align-items-flex-end {
+  align-items: flex-end;
+}
+
+.--align-items-center {
+  align-items: center;
+}
+
+.--align-items-baseline {
+  align-items: baseline;
+}
+
+.--align-items-start {
+  align-items: start;
+}
+
+.--align-items-end {
+  align-items: end;
+}
+
+.--align-items-self-start {
+  align-items: self-start;
+}
+
+.--align-items-self-end {
+  align-items: self-end;
+}
+
+//Visibilité et action______________________________________________________
+.--hidden {
+  visibility: hidden;
+  display: none;
+}
+
+.--visible {
+  visibility: visible;
+  display: block;
+}
+
+.--no-selection {
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.--selection {
+  -moz-user-select: text;
+  -webkit-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+.--no-scroll {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+}
+
+.--inactive {
+  pointer-events: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  touch-action: none;
+}
+
+//Z-index
+@for $level from 1 through 5 {
+  .--z-index-#{$level} {
+    z-index: $level;
+  }
+}

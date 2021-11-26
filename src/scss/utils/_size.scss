@@ -1,0 +1,17 @@
+@each $size, $value in $sizes {
+  .--width-#{$size} {
+    width: $value;
+  }
+}
+
+@each $size, $value in $sizes {
+  .--height-#{$size} {
+    height: $value;
+  }
+}
+
+@each $size, $value in $sizes {
+  .--line-height-#{$size} {
+    line-height: $value;
+  }
+}

@@ -1,0 +1,69 @@
+<nav class="--pt-80 --relative --z-index-4">
+  <ul class="--height-full --bg-light-grey --fixed --p-40 --pl-50 --brown">
+    <li class="--m-5 --py-15">
+      <div (click)="OnClick(1)" class="--flex --align-items-center">
+        <i [ngClass]="menu === 1 ? 'fas fa-chevron-down --m-10' : 'fas fa-chevron-right --m-10'"></i>
+        <span [ngClass]="menu === 1 ? '--bold-txt' : ''">La typographie</span>
+      </div>
+      <ul [ngClass]="menu === 1 ? '--visible --ml-30' : '--hidden'">
+        <li class="--p-10"><a routerLink="/size-text" class="--brown" routerLinkActive="--green">Size texte</a></li>
+        <li class="--p-10"><a routerLink="/align-text" class="--brown" routerLinkActive="--green">Align texte</a></li>
+        <li class="--p-10"><a routerLink="/style-text" class="--brown" routerLinkActive="--green">Style texte</a></li>
+      </ul>
+    </li>
+    <li class="--m-5 --py-15">
+      <div (click)="OnClick(2)" class="--flex --align-items-center">
+        <i [ngClass]="menu === 2 ? 'fas fa-chevron-down --m-10' : 'fas fa-chevron-right --m-10'"></i>
+        <span [ngClass]="menu === 2 ? '--bold-txt' : ''">Les couleurs</span>
+      </div>
+      <ul [ngClass]="menu === 2 ? '--visible --ml-30' : '--hidden'">
+        <li class="--p-10"><a routerLink="/color-text" class="--brown" routerLinkActive="--green">Couleur texte</a></li>
+        <li class="--p-10"><a routerLink="/color-background" class="--brown" routerLinkActive="--green">Couleur
+            background</a></li>
+      </ul>
+    </li>
+    <li class="--m-5 --py-15">
+      <div (click)="OnClick(3)" class="--flex --align-items-center">
+        <i [ngClass]="menu === 3 ? 'fas fa-chevron-down --m-10' : 'fas fa-chevron-right --m-10'"></i>
+        <span [ngClass]="menu === 3 ? '--bold-txt' : ''">Les espacements</span>
+      </div>
+      <ul [ngClass]="menu === 3 ? '--visible --ml-30' : '--hidden'">
+        <li class="--p-10"><a routerLink="/margin" class="--brown" routerLinkActive="--green">Margin</a></li>
+        <li class="--p-10"><a routerLink="/padding" class="--brown" routerLinkActive="--green">Padding</a></li>
+      </ul>
+    </li>
+    <li class="--m-5 --py-15">
+      <div (click)="OnClick(4)" class="--flex --align-items-center">
+        <i [ngClass]="menu === 4 ? 'fas fa-chevron-down --m-10' : 'fas fa-chevron-right --m-10'"></i>
+        <span [ngClass]="menu === 4 ? '--bold-txt' : ''">Les structures</span>
+      </div>
+      <ul [ngClass]="menu === 4 ? '--visible --ml-30' : '--hidden'">
+        <li class="--p-10"><a routerLink="position" class="--brown" routerLinkActive="--green">Position & Display</a></li>
+        <li class="--p-10"><a routerLink="flex" class="--brown" routerLinkActive="--green">Flex</a></li>
+        <li class="--p-10"><a routerLink="border" class="--brown" routerLinkActive="--green">Bordures</a></li>
+        <li class="--p-10"><a routerLink="sizes" class="--brown" routerLinkActive="--green">Sizes</a></li>
+        <li class="--p-10"><a routerLink="other-structure" class="--brown" routerLinkActive="--green">Autres</a></li>
+      </ul>
+    </li>
+    <li class="--m-5 --py-15">
+      <div (click)="OnClick(5)" class="--flex --align-items-center">
+        <i [ngClass]="menu === 5 ? 'fas fa-chevron-down --m-10' : 'fas fa-chevron-right --m-10'"></i>
+        <span [ngClass]="menu === 5 ? '--bold-txt' : ''">Les composants</span>
+      </div>
+      <ul [ngClass]="menu === 5 ? '--visible --ml-30' : '--hidden'">
+        <li class="--p-10"><a routerLink="/accueil" class="--brown" routerLinkActive="--green">Image</a></li>
+        <li class="--p-10"><a routerLink="/accueil" class="--brown" routerLinkActive="--green">Icone</a></li>
+        <li class="--p-10"><a routerLink="/accueil" class="--brown" routerLinkActive="--green">Titre</a></li>
+      </ul>
+    </li>
+    <li class="--m-5 --py-15">
+      <div (click)="OnClick(6)" class="--flex --align-items-center">
+        <i [ngClass]="menu === 6 ? 'fas fa-chevron-down --m-10' : 'fas fa-chevron-right --m-10'"></i>
+        <span [ngClass]="menu === 6 ? '--bold-txt' : ''">Les animations</span>
+      </div>
+      <ul [ngClass]="menu === 6 ? '--visible --ml-30' : '--hidden'">
+        <li class="--p-10"><a routerLink="/accueil" class="--brown" routerLinkActive="--green">Liste</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>

@@ -1,0 +1,14 @@
+.copy {
+  display: none;
+  visibility: hidden;
+  position: absolute;
+  width: auto;
+  height: auto;
+  top: 0;
+  right: 0;
+}
+
+div:hover > .copy {
+  display: block;
+  visibility: visible;
+}

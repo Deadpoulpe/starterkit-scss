@@ -1,0 +1,48 @@
+.--sm-square-img{
+  width: 50px;
+  height: 50px;
+}
+.--md-square-img{
+  width: 100px;
+  height: 100px;
+}
+.--lg-square-img{
+  width: 200px;
+  height: 200px;
+}
+.--xl-square-img{
+  width: 300px;
+  height: 300px;
+}
+.--xxl-square-img{
+  width: 400px;
+  height: 400px;
+}
+
+.--sm-rectangular-img{
+  width: 100px;
+  height: 50px;
+}
+.--md-rectangular-img{
+  width: 200px;
+  height: 100px;
+}
+.--lg-rectangular-img{
+  width: 400px;
+  height: 200px;
+}
+.--xl-rectangular-img{
+  width: 600px;
+  height: 300px;
+}
+.--xxl-rectangular-img{
+  width: 800px;
+  height: 400px;
+}
+
+img {
+  object-position: center;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}

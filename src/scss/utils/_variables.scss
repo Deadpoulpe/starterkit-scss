@@ -1,0 +1,123 @@
+//Taille d'écran____________________________________________________
+$breakpoints: (
+  md: 768px,
+  lg: 1024px,
+  xl: 1440px,
+);
+// Pallette de couleur____________________________________________________
+$colors: (
+  -blue: #009de0,
+  -brown: #443a31,
+  -orange: #ec6c43,
+  -green: #60b664,
+  -cyan: #34b1a9,
+  -purple: #9f3e91,
+  -red: #e53c43,
+  -yellow: #de9816,
+  -brown-logo: #503205,
+  -pink: #db0073,
+  -white: #fff,
+  -grey: #787575,
+  -light-grey: #f7f7f7,
+  -black: #000000,
+  -light-black: #1f2330,
+  -transparent: transparent,
+);
+
+//Typography_____________________________________________________________________
+$font-base: "Arial";
+$font-second: "Arial";
+
+$letter-spacing-base: 0.05em;
+
+$weights: (
+  light-txt: 100,
+  normal-txt: 400,
+  semibold-txt: 600,
+  bold-txt: 800,
+);
+
+//Margin et padding_____________________________________________________________________
+$spacers: (
+  "5": 5px,
+  "10": 10px,
+  "15": 15px,
+  "20": 20px,
+  "30": 30px,
+  "40": 40px,
+  "50": 50px,
+  "60": 60px,
+  "70": 70px,
+  "80": 80px,
+  "90": 90px,
+  "100": 100px,
+  "150": 150px,
+  "200": 200px,
+  "300": 300px,
+  "400": 400px,
+  "auto": auto,
+);
+
+//Border_____________________________________________________________________
+$borders-width: (
+  "1": 1px,
+  "2": 2px,
+  "3": 3px,
+  "4": 4px,
+  "5": 5px,
+  "10": 10px,
+  "none": none,
+);
+
+$borders-style: (
+  "solid": solid,
+  "dotted": dotted,
+  "dashed": dashed,
+  "double": double,
+  "groove": groove,
+  "ridge": ridge,
+  "none": none,
+);
+
+$borders-radius: (
+  "1": 1px,
+  "2": 2px,
+  "3": 3px,
+  "4": 4px,
+  "5": 5px,
+  "10": 10px,
+  "15": 15px,
+  "20": 20px,
+  "30": 30px,
+  "40": 40px,
+  "rond": 50%,
+  "none": none,
+);
+
+//Size_____________________________________________________________________
+$sizes: (
+  "5": 5px,
+  "10": 10px,
+  "15": 15px,
+  "20": 20px,
+  "30": 30px,
+  "40": 40px,
+  "50": 50px,
+  "60": 60px,
+  "70": 70px,
+  "80": 80px,
+  "90": 90px,
+  "100": 100px,
+  "150": 150px,
+  "200": 200px,
+  "300": 300px,
+  "400": 400px,
+  "500": 500px,
+  "600": 600px,
+  "700": 700px,
+  "800": 800px,
+  "900": 900px,
+  "1000": 1000px,
+  "auto": auto,
+  "full": 100%,
+);
