@@ -18,6 +18,7 @@ import { SizeText } from './custom/size-text/size-text.component';
 import { StyleText } from './custom/style-text/style-text.component';
 import { Sizes } from './custom/sizes/sizes.component';
 import { OtherStructure } from './custom/other-structure/other-structure.component';
+import { Image } from './custom/image/image.component';
 
 const routes: Routes = [
   {
@@ -92,6 +93,10 @@ const routes: Routes = [
   {
     path: 'other-structure',
     component: OtherStructure,
+  },
+  {
+    path: 'image',
+    component: Image,
   },
 
 ];

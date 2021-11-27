@@ -21,6 +21,7 @@ import { Flex } from './custom/flex/flex.component';
 import { Border } from './custom/border/border.component';
 import { Sizes } from './custom/sizes/sizes.component';
 import { OtherStructure } from './custom/other-structure/other-structure.component';
+import { Image } from './custom/image/image.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +41,8 @@ import { OtherStructure } from './custom/other-structure/other-structure.compone
     Flex,
     Border,
     Sizes,
-    OtherStructure
+    OtherStructure,
+    Image
   ],
   imports: [
     CommonModule,
