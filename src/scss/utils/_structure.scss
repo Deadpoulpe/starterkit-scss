@@ -11,6 +11,24 @@
   position: absolute;
 }
 
+@each $key, $value in $absolute-positions {
+  .--top-#{$key} {
+    top: $value;
+  }
+
+  .--bottom-#{$key} {
+    bottom: $value;
+  }
+
+  .--left-#{$key} {
+    left: $value;
+  }
+
+  .--right-#{$key} {
+    right: $value;
+  }
+}
+
 //Display______________________________________________________
 
 .--block {

@@ -21,7 +21,7 @@ $colors: (
   -light-grey: #f7f7f7,
   -black: #000000,
   -light-black: #1f2330,
-  -transparent: transparent,
+  -transparent: transparent
 );
 
 //Typography_____________________________________________________________________
@@ -120,4 +120,25 @@ $sizes: (
   "1000": 1000px,
   "auto": auto,
   "full": 100%,
+);
+
+//Position absolute_____________________________________________________________________
+$absolute-positions: (
+  "0": 0,
+  "1": 1px,
+  "2": 2px,
+  "3": 3px,
+  "4": 4px,
+  "5": 5px,
+  "10": 10px,
+  "15": 15px,
+  "20": 20px,
+  "30": 30px,
+  "40": 40px,
+  "50": 50px,
+  "60": 60px,
+  "70": 70px,
+  "80": 80px,
+  "90": 90px,
+  "100": 100px,
 );

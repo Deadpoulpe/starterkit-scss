@@ -22,6 +22,7 @@ import { Border } from './custom/border/border.component';
 import { Sizes } from './custom/sizes/sizes.component';
 import { OtherStructure } from './custom/other-structure/other-structure.component';
 import { Image } from './custom/image/image.component';
+import { Icon } from './custom/icon/icon.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +43,8 @@ import { Image } from './custom/image/image.component';
     Border,
     Sizes,
     OtherStructure,
-    Image
+    Image,
+    Icon
   ],
   imports: [
     CommonModule,

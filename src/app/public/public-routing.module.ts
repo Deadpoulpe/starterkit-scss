@@ -19,6 +19,7 @@ import { StyleText } from './custom/style-text/style-text.component';
 import { Sizes } from './custom/sizes/sizes.component';
 import { OtherStructure } from './custom/other-structure/other-structure.component';
 import { Image } from './custom/image/image.component';
+import { Icon } from './custom/icon/icon.component';
 
 const routes: Routes = [
   {
@@ -97,6 +98,10 @@ const routes: Routes = [
   {
     path: 'image',
     component: Image,
+  },
+  {
+    path: 'icon',
+    component: Icon,
   },
 
 ];
