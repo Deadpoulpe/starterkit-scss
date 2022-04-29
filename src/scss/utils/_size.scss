@@ -1,16 +1,22 @@
 @each $size, $value in $sizes {
-  .--width-#{$size} {
-    width: $value;
-  }
-}
-
-@each $size, $value in $sizes {
   .--height-#{$size} {
     height: $value;
   }
-}
-
-@each $size, $value in $sizes {
+  .--max-height-#{$size} {
+    max-height: $value;
+  }
+  .--min-height-#{$size} {
+    min-height: $value;
+  }
+  .--width-#{$size} {
+    width: $value;
+  }
+  .--max-width-#{$size} {
+    max-width: $value;
+  }
+  .--min-width-#{$size} {
+    min-width: $value;
+  }
   .--line-height-#{$size} {
     line-height: $value;
   }
